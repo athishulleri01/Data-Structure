@@ -21,6 +21,7 @@ class DoublyLinkedList:
             self.tail = data
 
     def displayForword(self):
+        print()
         if self.head is None:
             print("list empty")
             return
@@ -29,6 +30,7 @@ class DoublyLinkedList:
             print(temp.data,"->",end="")
             temp= temp.next
     def displayBackword(self):
+        print()
         if self.head is None:
             print("list empty")
             return
@@ -36,6 +38,30 @@ class DoublyLinkedList:
         while temp:
             print(temp.data,"->",end="")
             temp= temp.prev
+
+    def insertElementFirst(self,data):
+        print()
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            self.prev = None
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+    
+    def insertElementLast(self,data):
+        print()
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            self.prev = None
+            self.tail = new_node
+        else:
+            new_node.prev= self.tail
+            self.tail.next=new_node
+            self.tail = new_node
+
 
 
 dl = DoublyLinkedList()
@@ -47,3 +73,9 @@ dl.insert(5)
 
 dl.displayForword()
 dl.displayBackword()
+
+dl.insertElementFirst(10)
+dl.displayForword()
+
+dl.insertElementLast(13)
+dl.displayForword()
