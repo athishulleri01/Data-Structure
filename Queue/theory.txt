@@ -1,0 +1,73 @@
+What is a Queue?
+
+    Queue is the data structure that is similar to the queue in the real world. A queue is a data structure in which whatever 
+    comes first will go out first, and it follows the FIFO (First-In-First-Out) policy. Queue can also be defined as the list or 
+    collection in which the insertion is done from one end known as the rear end or the tail of the queue, whereas the deletion is 
+    done from another end known as the front end or the head of the queue.
+
+    The real-world example of a queue is the ticket queue outside a cinema hall, where the person who enters first in the queue 
+    gets the ticket first, and the last person enters in the queue gets the ticket at last. Similar approach is followed in the 
+    queue in data structure.
+
+
+
+
+Applications of Queue:
+
+Multi programming: Multi programming means when multiple programs are running in the main memory. It is essential to organize these multiple programs and these multiple programs are organized as queues. 
+Network: In a network, a queue is used in devices such as a router or a switch. another application of a queue is a mail queue which is a directory that stores data and controls files for mail messages.
+Job Scheduling: The computer has a task to execute a particular number of jobs that are scheduled to be executed one after another. These jobs are assigned to the processor one by one which is organized using a queue.
+Shared resources: Queues are used as waiting lists for a single shared resource.
+Real-time application of Queue:
+...............................
+1. ATM Booth Line
+2. Ticket Counter Line
+3. Key press sequence on the keyboard
+4. CPU task scheduling
+5. Waiting time of each customer at call centers.
+
+Advantages of Queue:
+.........................
+1. A large amount of data can be managed efficiently with ease.
+2. Operations such as insertion and deletion can be performed with ease as it follows the first in first out rule.
+3. Queues are useful when a particular service is used by multiple consumers.
+4. Queues are fast in speed for data inter-process communication.
+5. Queues can be used in the implementation of other data structures.
+
+Disadvantages of Queue:
+.........................
+1. The operations such as insertion and deletion of elements from the middle are time consuming.
+2. Limited Space.
+3. In a classical queue, a new element can only be inserted when the existing elements are deleted from the queue.
+4. Searching an element takes O(N) time.
+5. Maximum size of a queue must be defined prior.
+
+
+Types of Queue
+......................
+
+There are four different types of queue that are listed as follows -
+
+Types of Queue
+1  Simple Queue or Linear Queue
+2  Circular Queue
+3  Priority Queue
+4  Double Ended Queue (or Deque)
+
+1) Simple Queue or Linear Queue
+  * In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. 
+    The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes 
+    place is known as front end. It strictly follows the FIFO rule.
+  * The major drawback of using a linear Queue is that insertion is done only from the rear end. If the first three
+    elements are deleted from the Queue, we cannot insert more elements even though the space is available in a Linear Queue.
+    In this case, the linear Queue shows the overflow condition as the rear is pointing to the last element of the Queue.
+2) Circular Queue
+  * In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element 
+    of the queue is connected to the first element. It is also known as Ring Buffer, as all the ends are connected to another end. 
+  * The drawback that occurs in a linear queue is overcome by using the circular queue. If the empty space is available in a circular 
+    queue, the new element can be added in an empty space by simply incrementing the value of rear. The main advantage of using the 
+    circular queue is better memory utilization.
+3) Priority Queue
+    It is a special type of queue in which the elements are arranged based on the priority. It is a special type of queue data 
+    structure in which every element has a priority associated with it. Suppose some elements occur with the same priority, they 
+    will be arranged according to the FIFO principle. 
