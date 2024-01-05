@@ -1,0 +1,80 @@
+Stack
+............
+
+A stack is a linear data structure that stores items in a Last-In/First-Out (LIFO) or 
+First-In/Last-Out (FILO) manner. In stack, a new element is added at one end and an element 
+is removed from that end only. The insert and delete operations are often called push and pop.
+
+
+The functions associated with stack are:
+.............................................
+
+empty() – Returns whether the stack is empty – Time Complexity: O(1)
+size() – Returns the size of the stack – Time Complexity: O(1)
+top() / peek() – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
+push(a) – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
+pop() – Deletes the topmost element of the stack – Time Complexity: O(1)
+
+
+Advantages of Stacks:
+............................
+1) Simple and Efficient:
+    Stacks are simple to implement and operate, making them efficient for certain types of tasks.
+
+2) Last In, First Out (LIFO) Principle:
+    The LIFO principle makes stacks suitable for scenarios where the most recently added element is the first one to be processed.
+
+3) Fast Access to the Top Element:
+    Operations like push and pop in a stack are generally fast and have a constant time complexity, O(1).
+
+4) Memory Management:
+    Stacks are used in memory management systems for function calls and variable storage, ensuring efficient memory 
+    allocation and deallocation.
+
+5) Undo Mechanism:
+    Stacks are commonly used to implement undo mechanisms in applications, allowing users to revert to previous states.
+
+6) Recursive Algorithms:
+    Stacks play a crucial role in supporting recursion in programming languages. Function calls are stored in a stack,
+    allowing for easy management of nested calls.
+
+7) Expression Evaluation:
+    Stacks are often used in compilers and interpreters to evaluate expressions, ensuring proper order of execution.
+
+Disadvantages of Stacks:
+...........................
+ 1) Limited Access:
+    Stacks have limited access points. In a traditional stack, you can only access the top element without removing other elements.
+
+ 2) Fixed Size (in Some Implementations):
+    Some stack implementations may have a fixed size, leading to potential overflow or underflow issues if not managed properly.
+
+ 3) Not Suitable for Random Access:
+    Stacks are not designed for random access to elements. Accessing elements in the middle requires popping elements above 
+    the desired one.
+
+
+ Applications of Stacks:
+ ................................
+1)  Function Calls and Recursion:
+    Stacks are used to manage function calls and recursion in programming languages.
+
+2)  Expression Evaluation:
+    Stacks are employed in evaluating expressions, ensuring proper order of execution, and handling parentheses.
+
+3)  Undo Mechanisms:
+    Stacks are used to implement undo mechanisms in applications where users can revert to previous states.
+
+4)  Memory Management:
+    Stacks play a key role in memory management systems, particularly in allocating and deallocating memory for variables and 
+    function calls.
+
+5)  Backtracking Algorithms:
+    Backtracking algorithms often use stacks to maintain the state of exploration and easily backtrack when necessary.
+
+6)  Parsing:
+    Stacks are used in parsing algorithms for syntax analysis of programming languages.
+
+7)  Algorithmic Problems:
+    Many algorithmic problems can be efficiently solved using stacks, such as the Tower of Hanoi problem, depth-first search,
+    and certain graph algorithms.

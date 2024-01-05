@@ -1,0 +1,42 @@
+What is Tail-Recursion?
+
+A unique type of recursion where the last procedure of a function is a recursive call. 
+The recursion may be automated away by performing the request in the current stack frame 
+and returning the output instead of generating a new stack frame. The tail-recursion may 
+be optimized by the compiler which makes it better than non-tail recursive functions. 
+
+...............................................................................
+Normal
+.......
+
+# Program to calculate factorial of a number
+# using a Non-Tail-Recursive function. 
+
+# non-tail recursive function
+def Recur_facto(n): 
+
+	if (n == 0): 
+		return 1
+
+	return n * Recur_facto(n-1) 
+
+# print the result
+print(Recur_facto(6))
+..................................................................................
+Tail-Recursive
+..............
+
+# Program to calculate factorial of a number
+# using a Tail-Recursive function.
+
+# A tail recursive function 
+def Recur_facto(n, a = 1): 
+
+	if (n == 0): 
+		return a 
+
+	return Recur_facto(n - 1, n * a) 
+
+# print the result
+print(Recur_facto(6))
+....................................................................................

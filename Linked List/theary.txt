@@ -1,0 +1,69 @@
+What is Linked List
+.......................
+
+A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.\
+The elements in a linked list are linked using pointers 
+
+
+
+Applications of linked list in computer science:
+....................................................
+1. Implementation of stacks and queues
+2. Implementation of graphs: Adjacency list representation of graphs is the most 
+   popular which uses a linked list to store adjacent vertices.
+3. Dynamic memory allocation: We use a linked list of free blocks.
+4. Maintaining a directory of names
+5. Performing arithmetic operations on long integers
+6. Manipulation of polynomials by storing constants in the node of the linked list
+7. Representing sparse matrices
+
+
+Advantages of Linked Lists:
+........................
+
+1) Dynamic Size:
+   Linked lists can easily grow or shrink in size during runtime, as memory is allocated or deallocated as needed.
+
+2) Ease of Insertion and Deletion:
+   Inserting or deleting elements in a linked list is more efficient than in arrays or lists, especially in the middle 
+   of the list, as it only involves updating pointers.
+3) No Pre-allocation of Memory:
+   Unlike arrays, linked lists don't require pre-allocation of memory for a fixed size, making them more flexible.
+4) Memory Utilization:
+   Linked lists can use memory more efficiently than arrays since they only allocate memory for the elements and pointers as needed.
+5) Dynamic Data Structures:
+   Linked lists are a dynamic data structure, making them suitable for applications where the size of the data structure is not known 
+   in advance.
+
+Disadvantages of Linked Lists:
+................................
+
+1) Random Access:
+   Linked lists don't support direct or random access to elements like arrays do. Accessing an element requires traversing the list 
+   from the beginning.
+2) Memory Overhead:
+   Linked lists use additional memory for storing pointers, which can lead to higher memory overhead compared to arrays.
+3) Complexity:
+   Implementing and working with linked lists can be more complex than arrays, especially for beginners. Managing pointers requires 
+   careful attention to avoid memory leaks or segmentation faults.
+4) Cache Locality:
+   Linked lists may not have good cache locality, making them less efficient in terms of cache usage compared to contiguous storage 
+   structures like arrays.
+
+Applications of Linked Lists:
+..............................
+
+1) Dynamic Memory Allocation:
+   Linked lists are commonly used in situations where dynamic memory allocation is crucial, such as implementing dynamic stacks or 
+   queues.
+2) Dynamic Data Structures:
+   Applications that require frequent insertion and deletion of elements, like undo functionality in text editors, often use linked lists.
+3) Implementation of Stacks and Queues:
+   Linked lists are well-suited for implementing stacks and queues due to their efficient insertion and deletion operations.
+4) Arbitrary Memory Allocation:
+   In situations where memory is fragmented, linked lists allow for more flexible memory allocation.
+5) Graphs and Trees:
+   Linked structures are fundamental in implementing graph and tree data structures. For example, each node in a tree or graph can be
+   represented using a linked list.
+6) Memory Management:
+   Memory management systems often use linked lists to keep track of free blocks and allocated blocks.
