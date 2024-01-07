@@ -1,0 +1,7 @@
+Hast table
+............
+
+A hash table is a data structure that allows for quick insertion, deletion, 
+and retrieval of data. It works by using a hash function to map a key to an
+index in an array. In this article, we will implement a hash table in Python
+using separate chaining to handle collisions.
