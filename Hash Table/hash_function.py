@@ -23,5 +23,7 @@ h = HashTable()
 h.add('march',3)
 result = h.get('march')
 print(result)
+result = h.get('march')
+print(result)
 
         
