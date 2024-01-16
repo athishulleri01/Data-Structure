@@ -2,10 +2,11 @@
 
 
 def heapify(arr, n, i):
-    # Find largest among root and children
+    # Find largest among root and children  
     largest = i
     l = 2 * i + 1
     r = 2 * i + 2
+    # r = 2 * i + 2
 
     if l < n and arr[i] < arr[l]:
         largest = l
