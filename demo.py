@@ -26,3 +26,20 @@ odd = [x for x in odd if x != 0]
 
 print("Even numbers:", even)
 print("Odd numbers:", odd)
+# ...........................................
+# Creating a dictionary of even squares
+numbers = [1, 2, 3, 4, 5]
+even_squares_dict = {num: num**2 for num in numbers if num % 2 == 0}
+print(even_squares_dict)
+
+
+
+# ///////////////////
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)
+# ///////////////////////
+numbers = [1, 2, 3, 4, 5]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
+
