@@ -1,12 +1,14 @@
-# def factorial(num):
-#     if num == 0:
-#         return 1
-#     return num * factorial(num-1)
+def factorial(num):
+    if num == 0:
+        return 1
+    return num * factorial(num-1)
 
 
-# f = factorial(3)
-# print(f)
+f = factorial(3)
+print(f)
 
+
+# ...............................
 
 def primeOrNot(num):
     x = num
