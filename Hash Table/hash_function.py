@@ -25,4 +25,7 @@ result = h.get('march')
 print(result)
 
 
+# we can create diffrent wayd of hash fuction 
+
+
         
