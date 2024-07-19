@@ -4,7 +4,6 @@
 # Input: head = [3,2,0,-4], pos = 1
 # Output: true
 
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -17,10 +16,10 @@ class LinkedList:
 
     def display(self):
         temp = self.head
-        print()
         while temp:
             print(temp.data, "->", end='')
             temp = temp.next
+        print("None")
 
     def insert(self, data):
         n = Node(data)
@@ -33,10 +32,10 @@ class LinkedList:
 
     def ElementMeet(self):
         if self.head is None:
-            return self.head
+            return False
         
         slow = self.head
-        fast = self.head.next
+        fast = self.head
         
         while fast is not None and fast.next is not None:
             slow = slow.next
@@ -44,17 +43,20 @@ class LinkedList:
 
             if slow == fast:
                 return True
-            
         
         return False
-    
 
+
+# Creating a LinkedList with a cycle for testing
 ll = LinkedList()
-ll.insert(1)
+ll.insert(3)
 ll.insert(2)
-ll.insert(4)
-ll.insert(5)
-ll.insert(6)
-ll.insert(6)
+ll.insert(0)
+ll.insert(-4)
+
+# Creating a cycle manually
+ll.head.next.next.next.next = ll.head.next  # pos = 1 means -4 points back to 2
+
+# Checking for a cycle
 result = ll.ElementMeet()
-print(result)
+print("Cycle Detected:", result)
