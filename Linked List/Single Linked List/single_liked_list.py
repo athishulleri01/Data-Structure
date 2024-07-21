@@ -14,7 +14,9 @@ class LinkedList:
         while temp:
             print(temp.data, "->", end='')
             temp = temp.next
-
+            
+#  -----------------------------------------------insertion Start------------------------------------------>
+# insert new Node to the linked list
     def insert(self, data):
         n = Node(data)
         if self.head is None:
@@ -24,6 +26,7 @@ class LinkedList:
             self.last.next = n
             self.last = n
 
+# insert new Node to the beggning of linked list
     def inserAtBegin(self, data):
         x = Node(data)
         if self.head is None:
@@ -33,6 +36,7 @@ class LinkedList:
             x.next = self.head
             self.head = x
 
+# insert new Node to the Last position of the linked list
     def insertAtLast(self, data):
         x = Node(data)
         if self.head is None:
@@ -41,13 +45,27 @@ class LinkedList:
         else:
             self.last.next = x
             self.last = x
-
-    def deleteAtBegin(self):
+   
+# insert new Node to the the specified position of the linked list 
+    def insertAtPosition(self, data, index):
         if self.head is None:
             print("list empty")
         else:
-            self.head.next = self.head.next.next
-            print("element deleted successfully")
+            temp = self.head
+            it = 0
+            prev = None
+            if iter == 0:
+                self.deleteAtBegin()
+                return
+            while temp:
+                if it == index:
+                    nw = Node(data)
+                    nw.next = prev.next
+                    prev.next = nw
+                it += 1
+                prev = temp
+                temp = temp.next
+# insert new Node after the specified element
     def insertAfterElement(self,data,element):
         if self.head is None:
             print("Element not found in this linked list")
@@ -58,6 +76,8 @@ class LinkedList:
             temp = temp.next
         data.next = temp.next
         temp.next = data
+        
+# insert new Node before the specified position of the list
     def insertBeforeElement(self,data,element):
         if self.head is None:
             print("Element not found in this linked list")
@@ -69,7 +89,48 @@ class LinkedList:
             
         data.next = temp.next
         temp.next = data
+#  -----------------------------------------------Insertion End------------------------------------------>
+                                 
+#  -----------------------------------------------Deletion Start------------------------------------------>
+# delete Node from beggining of linked list
+    def deleteAtBegin(self):
+        if self.head is None:
+            print("list empty")
+        else:
+            self.head = self.head.next
+            print("element deleted successfully")
+            
+# delete Node from End of linked list
+    def deleteAtEnd(self):
+        if self.head is None:
+            print("list empty")
+        else:
+            temp = self.head
+            prev = None
+            while temp.next is not None:
+                prev = temp
+                temp = temp.next
+            prev.next = None
+   
+# delete Node from specified position of linked list
+    def deleteAtPosition(self, pos):
+        if self.head is None:
+            print("list empty")
+        else:
+            temp = self.head
+            prev = None
+            it = 0
+            while temp:
+                if it == pos:
+                    prev.next = prev.next.next
+                    return
+                it += 1
+                prev = temp
+                temp = temp.next
+                
 
+#  -----------------------------------------------Deletion End------------------------------------------>
+    
 
 
 ll = LinkedList()
@@ -84,6 +145,18 @@ ll.display()
 ll.insertAtLast(6)
 ll.display()
 ll.deleteAtBegin()
+ll.display()
+ll.insertAfterElement(10, 2)
+ll.display()
+ll.insertBeforeElement(20, 2)
+ll.display()
+ll.insertAtPosition(100,2)
+ll.display()
+ll.deleteAtBegin()
+ll.display()
+ll.deleteAtEnd()
+ll.display()
+ll.deleteAtPosition(2)
 ll.display()
 
 
